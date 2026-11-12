@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seychelles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topo">
+      <h1 id="saudacao">Bom dia, Carlos 🌴</h1>
+      <p id="data-hoje" class="data"></p>
+      <section class="card streak-card">
+  <h2>Caminho pra Seychelles</h2>
+  <p id="streak-numero" class="streak-numero">0 dias</p>
+  <p id="streak-status" class="streak-status">Marque uma tarefa pra começar hoje</p>
+</section>
+    </header>
+
+    <section class="card">
+      <h2>Hoje eu faço</h2>
+      <ul id="lista-tarefas" class="lista-tarefas">
+        <li>
+          <label>
+            <input type="checkbox" />
+            <span>Abrir o VS Code</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" />
+            <span>Codar 25 minutos</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" />
+            <span>Beber água</span>
+          </label>
+        </li>
+        <li>
+  <label>
+    <input type="checkbox" />
+    <span>Não se odiar tanto</span>
+  </label>
+</li>
+      </ul>
+    </section>
+
+    <section class="card timer-card">
+      <h2>Foco</h2>
+      <div class="timer" id="timer">25:00</div>
+      <div class="botoes">
+        <button id="btn-start">Começar</button>
+        <button id="btn-reset" class="secundario">Zerar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
